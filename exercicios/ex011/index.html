@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-HTML5.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <p>
+        Fazendo com sources invertidos.
+    </p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width:750px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="">
+    </picture>
+    <p>
+        Redimencionamento de fotos, de acordo com o dispositivo.
+    </p>
+    <picture>
+        <source media="(max-width: 735px )" srcset="imagens/foto/foto-297.jpg" type="image/jpg">
+        <source media="(max-width:1270px )" srcset="imagens/foto/foto-735.jpg" type="image/jpg">
+        <img src="imagens/foto/foto-1269.jpg" alt="">
+    </picture>
+    <p>Para ver mais imagens,<a href="pag002.html" rel="next">clique aqui</a></p>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+   <!-- <audio src="midia/Pressure Cooker - Jeremy Korpas.mp3" controls autoplay></audio> -->
+
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/Ten Inch Spikes - Jeremy Korpas.mp3" type="audio/mpeg">
+        <source src="midia/Ten Inch Spikes - Jeremy Korpas.mp3" type="audio/ogg">
+        <source src="midia/Ten Inch Spikes - Jeremy Korpas.mp3" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Ten Inch Spikes - Jeremy Korpas.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+    <audio>
+        <source src="midia/Pressure Cooker - Jeremy Korpas.mp3" type="audio/mpeg">
+        <source src="midia/Pressure Cooker - Jeremy Korpas.mp3" type="audio/ogg">
+        <source src="midia/Pressure Cooker - Jeremy Korpas.mp3" type="audio/wav">
+    </audio>
+</body>
+</html>
