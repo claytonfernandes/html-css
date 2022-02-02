@@ -29,6 +29,7 @@ header {
 }
 
 header > h1 {
+    color: #3e5b66;
     padding: 10px;
     font-size: 10vw;
     font-variant: small-caps;
@@ -98,8 +99,9 @@ section#img02 {
 
 footer {
     background-color: #8DA696;
-    color: white;
+    color: #3e5b66;
     font-family: var(--fonte1);
+    font-weight: bold;
     text-align: center;
     padding: 10px;
 }
