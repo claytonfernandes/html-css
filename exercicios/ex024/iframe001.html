@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos de IFrame</title>
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 400px;
+            border: 2px solid  rgb(77, 119, 13)
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
         Acessando o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+        <!--Tamanho padrão 300px/150px-->
 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="no">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>
         </iframe>
         
         para aprender a programar.
@@ -21,8 +30,8 @@
     <p>
         O site do 
         
-        <iframe src="https://www.google.co.br" frameborder="1"></iframe>
-        
+      <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500"></iframe>
+        no<a href="https://gustavoguanabara.github.io" target="_blank">Git Hub</a>
         também é muito legal.
     </p>
 </body>
